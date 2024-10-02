@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import MetaTags from "./component/Utils/MetaTags";
+
 import "@/styles/App.css";
 import "@/styles/font.css";
 import "@/styles/index.css";
@@ -10,6 +12,7 @@ import NotFound from "./pages/NotFound";
 function App() {
   return (
     <>
+      <MetaTags />
       <Router>
         <Routes>
           {/* Application */}
