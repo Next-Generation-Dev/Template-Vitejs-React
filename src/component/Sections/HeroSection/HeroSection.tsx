@@ -1,3 +1,7 @@
 export default function HeroSection() {
-  return <div id="herosection" className=""></div>;
+  return (
+    <div id="herosection" className="">
+      hero
+    </div>
+  );
 }
