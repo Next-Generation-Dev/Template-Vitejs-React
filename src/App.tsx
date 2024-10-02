@@ -4,8 +4,8 @@ import "@/styles/App.css";
 import "@/styles/font.css";
 import "@/styles/index.css";
 
-import Home from "@/pages/Home";
-import NotFound from "@/pages/NotFound";
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
