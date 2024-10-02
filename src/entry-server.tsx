@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOMServer from "react-dom/server";
-import App from "@/App";
+import App from "./App";
 
-export function render() {
+export function render(): string {
   const appHtml = ReactDOMServer.renderToString(
     <React.StrictMode>
       <App />
@@ -20,7 +20,7 @@ export function render() {
       </head>
       <body>
         <div id="root">${appHtml}</div>
-        <script type="module" src="/src/entry-client.jsx"></script>
+        <script type="module" src="/src/entry-client.tsx"></script>
       </body>
     </html>
   `;
