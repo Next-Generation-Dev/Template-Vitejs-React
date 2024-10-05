@@ -17,6 +17,11 @@ function App() {
         <Routes>
           {/* Application */}
           <Route path="/" element={<Home />} />
+
+          {/* 404 */}
+          <Route path="/404" element={<NotFound />} />
+          <Route path="/not-found" element={<NotFound />} />
+          <Route path="/notfound" element={<NotFound />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </Router>
